@@ -1,7 +1,7 @@
 import food from "./assets/images/food.svg";
 import logo from "./assets/images/logo.svg";
 import remove from "./assets/images/remove.svg";
-import mainFeature from "./scripts/main";
+import formatInput from "./scripts/main";
 import "./style.css";
 document.querySelector("#app").innerHTML = `
 <main>
@@ -35,7 +35,7 @@ document.querySelector("#app").innerHTML = `
                 type="text"
                 name="amount"
                 id="amount"
-                placeholder="0,00"
+                placeholder="R$ 0,00"
                 required
               />
             </fieldset>
@@ -67,5 +67,4 @@ document.querySelector("#app").innerHTML = `
        <footer><a href="https://www.ofs.dev.br">Desenvolvido por OFS | Emmanuel Oliveira</a></footer>
     </main>  
 `;
-
-mainFeature();
+formatInput();
