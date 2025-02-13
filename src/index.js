@@ -47,7 +47,7 @@ document.querySelector("#app").innerHTML = `
           <header>
             <p>
               Minhas solicitações <i>&bullet;</i>
-              <span>0 despesas</span>
+              <span>0 despesa</span>
             </p>
             <h2><small>R$</small>0,00</h2>
          </header>        

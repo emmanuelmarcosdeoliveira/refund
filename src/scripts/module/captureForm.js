@@ -1,3 +1,5 @@
+import { UpdateTotal } from "./updateTotals.js";
+
 export function captureForms() {
   const expenseList = document.querySelector("ul");
   const form = document.querySelector("form");
@@ -74,6 +76,8 @@ export function captureForms() {
         // Adicionado a li dentro da ul
         expenseList.append(expenseItem);
 
+        // chama a função externa que atualiza os totais
+        UpdateTotal();
         throw new Error("Erro de Execução");
       } catch (error) {}
     }
