@@ -1,7 +1,8 @@
 import food from "./assets/images/food.svg";
 import logo from "./assets/images/logo.svg";
 import remove from "./assets/images/remove.svg";
-import formatInput from "./scripts/main";
+import { captureForms } from "./scripts/module/captureForm";
+import formatInput from "./scripts/module/formatInput";
 import "./style.css";
 document.querySelector("#app").innerHTML = `
 <main>
@@ -49,22 +50,24 @@ document.querySelector("#app").innerHTML = `
               <span>0 despesas</span>
             </p>
             <h2><small>R$</small>0,00</h2>
-          </header>
-
+         </header>        
           <ul>
-            <li class="expense">
-              <img src="${food}" alt="Ícone de tipo da despesa" />
-              <div class="expense-info">
-                <strong>Almoço</strong>
-                <span>Alimentação</span>
-             </div>
-              <span class="expense-amount"><small>R$</small>1.420,57</span>
-              <img src="${remove}" alt="remover" class="remove-icon" />
-            </li>
-          </ul>
-               </aside>
+          <!-- Exemplo de item da lista
+               <li class="expense">
+               <img src="${food}" alt="Ícone de tipo da despesa" />
+               <div class="expense-info">
+                 <strong>Almoço</strong>
+                 <span>Alimentação</span>
+              </div>
+               <span class="expense-amount"><small>R$</small>1.420,57</span>
+               <img src="${remove}" alt="remover" class="remove-icon" />
+             </li>
+          -->
+             </ul>
+          </aside>
          </section>
        <footer><a href="https://www.ofs.dev.br">Desenvolvido por OFS | Emmanuel Oliveira</a></footer>
     </main>  
 `;
 formatInput();
+captureForms();
