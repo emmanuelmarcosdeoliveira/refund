@@ -1,3 +1,5 @@
+import { formClear } from "./formClear.js";
+
 export function UpdateTotal() {
   const expenseQuantity = document.querySelector("aside header p span");
   const expenseList = document.querySelector("ul");
@@ -42,6 +44,7 @@ export function UpdateTotal() {
     total = formatCurrencyBRL(total).toUpperCase().replace("R$", "");
     expensesTotal.innerHTML = "";
     expensesTotal.append(symbolBRL, total);
+    formClear();
   } catch (error) {
     alert("Erro ao calcular o total");
   }

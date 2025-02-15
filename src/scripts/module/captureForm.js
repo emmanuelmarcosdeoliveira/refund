@@ -79,6 +79,7 @@ export function captureForms() {
         // chama a função externa que atualiza os totais
         UpdateTotal();
         sunTotalPrice();
+
         throw new Error("Erro de Execução");
       } catch (error) {}
     }
