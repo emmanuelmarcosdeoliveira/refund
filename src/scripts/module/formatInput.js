@@ -1,6 +1,6 @@
 export default function formatInput() {
-  // Capturando o valor de input e formatando apenas para números através do Regex
   const amount = document.getElementById("amount");
+  // Capturando o valor de input e formatando apenas para números através do Regex
   amount.oninput = () => {
     let value = amount.value.replace(/\D/g, "");
     // Transformar o valor em centavos
