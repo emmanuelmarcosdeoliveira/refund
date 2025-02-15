@@ -1,8 +1,9 @@
 import food from "./assets/images/food.svg";
 import logo from "./assets/images/logo.svg";
 import remove from "./assets/images/remove.svg";
-import { captureForms } from "./scripts/module/captureForm";
-import formatInput from "./scripts/module/formatInput";
+import { captureForms } from "./scripts/module/captureForm.js";
+import formatInput from "./scripts/module/formatInput.js";
+import { removeItem } from "./scripts/module/removeItem.js";
 import "./style.css";
 document.querySelector("#app").innerHTML = `
 <main>
@@ -71,3 +72,4 @@ document.querySelector("#app").innerHTML = `
 `;
 formatInput();
 captureForms();
+removeItem();
