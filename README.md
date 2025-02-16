@@ -60,7 +60,7 @@ Inclui como desafio:<br>
 
 - [x] Incluir o [Vite](https://vite.dev/) na construção desse projeto.<br>
 - [x] em vez do node.js trabalhar nesse projeto com [bun.js](https://bun.sh/) um RunTime JavaScript,mais rápido e performático que o [Node.js](https://nodejs.org/pt).</br>
-- [x] Por usar um ferramenta de construção de sites Web, vou usar módulos de JavaScript para dividir a aplicação em partes menores. E posteriormente o `vite` irá fazer o **bundler** da aplicação.</br>
+- [x] Fazer o uso de módulos JavaScript, para dividir a aplicação em partes menores. Pois posteriormente o `vite` quando for fazer o `deploy` ele irá fazer o **bundler** da aplicação.</br>
 
 ### Functionalities
 
