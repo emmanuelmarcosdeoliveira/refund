@@ -32,10 +32,7 @@ export function captureForms() {
         // Criando a imagem que representa as nossas categorias
         const expenseIcon = document.createElement("img");
         // Capturando a imagem do ícone de forma dinâmica
-        expenseIcon.setAttribute(
-          "src",
-          `./src/assets/images/${newExpense.category_id}.svg`
-        );
+        expenseIcon.setAttribute("src", `/${newExpense.category_id}.svg`);
         expenseIcon.setAttribute("alt", newExpense.category_name);
 
         // Cria as descrição das despesas a informação
@@ -62,7 +59,7 @@ export function captureForms() {
 
         // Criando o ícone de remover Despesas
         const expenseRemove = document.createElement("img");
-        expenseRemove.setAttribute("src", "./src/assets/images/remove.svg");
+        expenseRemove.setAttribute("src", "/remove.svg");
         expenseRemove.classList.add("remove-icon");
         expenseRemove.setAttribute("alt", "remover despesas");
 
